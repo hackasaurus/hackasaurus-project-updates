@@ -1,0 +1,37 @@
+body, html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 640px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  font-size: 10pt;
+  line-height: 1.5em;
+}
+
+a {
+  color: steelblue;
+  text-decoration: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.bug {
+  border: 1px solid steelblue;
+  border-radius: 3px;
+  color: black;
+  background: lightsteelblue;
+  font-size: 8pt;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+a.bug:hover {
+  text-decoration: none;
+  background: yellow;
+}
+
+img#supergirl {
+  float: right;
+  width: 100px;
+}
