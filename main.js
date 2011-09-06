@@ -1,10 +1,15 @@
 $(window).ready(function() {
+  var projects = {
+    81480: 'events'
+  };
+
   var bugRe = /\/projects\/(\d+)(-([\w]+))?\/tickets\/(\d+)/;
   $("a[href^=\"http://hackasaurus.lighthouseapp.com/\"]").each(function() {
     var match = $(this).attr("href").match(bugRe);
 
     if (match && !$(this).text()) {
-      var project = match[3];
+      var projectID = match[1];
+      var project = projects[projectID] || match[3];
       var label = (project ? project + "\u00a0" : "") + "#" + match[4];
       $(this).addClass("bug").text(label);
     }
