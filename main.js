@@ -1,6 +1,7 @@
 $(window).ready(function() {
   var projects = {
-    81480: 'events'
+    81480: 'events',
+    81472: 'goggles'
   };
 
   var bugRe = /\/projects\/(\d+)(-([\w]+))?\/tickets\/(\d+)/;
